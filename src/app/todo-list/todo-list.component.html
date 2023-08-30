@@ -1,0 +1,13 @@
+<div>
+    <h2>To-Do List</h2>
+
+    <form action="">
+        <input type="text" placeholder="Enter a new Task" [(ngModel)]="newTask">
+        <button type="button" (click)="addTask()"></button>
+    </form>
+    <ul>
+        <li *ngFor="let task of tasks">
+            {{task.name}}
+        </li>
+    </ul>
+</div>
